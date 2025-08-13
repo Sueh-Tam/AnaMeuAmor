@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title="Meu Amor por Você ❤️">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    
+    <!-- Player de Música -->
+    <div class="music-player">
+        <button id="music-btn" onclick="toggleMusic()">🎵 Tocar Música</button>
+        <audio id="background-music" loop>
+            <source src="songs/Love Story.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </div>
+    
+    <div class="container">
+        <!-- Card Dinâmico -->
+        <div class="card active" id="dynamic-card">
+            <div class="heart" id="card-heart">💖</div>
+            <h1 id="card-title">Para Minha Princesa</h1>
+            <p class="message" id="card-message">Cada momento ao seu lado é um presente que guardo no coração...</p>
+            <div class="buttons">
+                <button class="btn-prev" id="prev-btn" onclick="prevCard()" disabled>← Anterior</button>
+                <button class="btn-next" id="next-btn" onclick="nextCard()">Próximo →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
