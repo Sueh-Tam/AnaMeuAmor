@@ -332,7 +332,7 @@ function createFinalCard() {
     const finalCardDiv = document.createElement('div');
     finalCardDiv.id = 'final-card';
     finalCardDiv.innerHTML = `
-        <div class="card">
+        <div class="card" style="display:block">
             <div class="heart">💖</div>
             <h1>Fim da Jornada</h1>
             <p class="message">Então, agora acabou, obrigado por ter chegado até aqui, essa é só uma demonstração de amor por você. Espero que tenha gostado, desculpa pela surpresa. Eu te amo e bom trabalho 💕</p>
